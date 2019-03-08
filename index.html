@@ -6,25 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Komvux Prime Sweden</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color:#000;">
     <header>
         <!---Bootstrap nav-bar-->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="upper">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#upper"style="color:white;">Pizza</a>
+              <a class="nav-link" href="#upper"style="color:white; font-size: 20px;">M | R | H |</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;font-size: 20px;">
+                    Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#Pizza">Pizza</a>
+                    <a class="dropdown-item" href="#SeaFood">SeaFood</a>
+                    <a class="dropdown-item" href="#Sandwish">Sandwish</a>
+                    <a class="dropdown-item" href="#Meat">Meat</a>
+                    <a class="dropdown-item" href="#Dishes">Dishes</a>
+                </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Menu"style="color:white;">Menu</a>
+              <a class="nav-link" href="#payment"style="color:white;font-size: 20px;">Cart</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#payment"style="color:white;">Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" style="color:white;">Contact</a>
+              <a class="nav-link" href="#contact" style="color:white;font-size: 20px;">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -36,29 +47,45 @@
         <li data-target="#demo" data-slide-to="0" class="active"></li>
         <li data-target="#demo" data-slide-to="1"></li>
         <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
       </ul>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="A.jpg" alt="Los Angeles" width="1100" height="500" style="opacity: 0.65;">
+          <img src="images/B.jpg" alt="Los Angeles" width="1100" height="500" style="opacity: 0.65;">
           <div class="carousel-caption">
-            <h3>Tasty Los Angeles Pizza</h3>
-            <p>We had such a great time in LA!</p>
+            <h3 style="color:white;">Tasty Helsingbory Pizza</h3>
+            <p style="color:white;">Come here and taste our delicious Pizza with this beautiful sight in HB!</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="B.jpg" alt="Chicago" width="1100" height="500" style="opacity: 0.65;">
+          <img src="images/sea1.jpg" alt="Chicago" width="1100" height="500" style="opacity: 0.65;">
           <div class="carousel-caption">
-            <h3>Tasty Chicago pizza</h3>
-            <p>Thank you, Chicago!</p>
+            <h3 style="color:white;">Tasty Helsingbory SeaFood</h3>
+            <p style="color:white;">Come here and taste our delicious SeaFood with this beautiful sight in HB!</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="C.jpg" alt="New York" width="1100" height="500" style="opacity: 0.65;">
+          <img src="images/A.jpg" alt="New York" width="1100" height="500" style="opacity: 0.65;">
           <div class="carousel-caption">
-            <h3>Tasty New York Pizza</h3>
-            <p>We love the Big Apple!</p>
+            <h3 style="color:white;">Tasty Helsingbory Sandwich</h3>
+            <p style="color:white;">Come here and taste our delicious Sandwich with this beautiful sight in HB!</p>
           </div>
         </div>
+        <div class="carousel-item">
+            <img src="images/a1.jpg" alt="New York" width="1100" height="500" style="opacity: 0.65;">
+            <div class="carousel-caption">
+              <h3 style="color:white;">Tasty Helsingbory Meat</h3>
+              <p style="color:white;">Come here and taste our delicious Meat with this beautiful sight in HB!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/d1.jpg" alt="New York" width="1100" height="500" style="opacity: 0.65;">
+            <div class="carousel-caption">
+              <h3 style="color:white;">Tasty Helsingbory Dishes</h3>
+              <p style="color:white;">Come here and taste our delicious Dishes with this beautiful sight in HB!</p>
+            </div>
+          </div>
       </div>
       <a class="carousel-control-prev" href="#demo" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
@@ -69,12 +96,251 @@
     </div>
   </section>
   <!---Bootstrap slider-->
+  <!---Pizza Menu-->
+  <section class="container content-section"  id="Pizza">
+    <h2 class="section-header">Pizza Menu</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Pizza No. 1</span>
+        <img class="shop-item-image" src="Images/5.jpg" width="300px" height="600px">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$12.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Pizza No. 2</span>
+        <img class="shop-item-image" src="Images/2.jpg" width="300px" height="600px">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$14.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Pizza No. 3</span>
+        <img class="shop-item-image" src="Images/3.jpg" width="300px" height="600px">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$9.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Pizza No. 4</span>
+        <img class="shop-item-image" src="Images/5.jpg" width="300px" height="600px">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$12.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div>
+
+
+   <!---Sea food  Menu-->
+   <h2 class="section-header" id="SeaFood">Sea food Menu</h2>
+   <div class="shop-items">
+     <div class="shop-item">
+       <span class="shop-item-title">Sea food No. 1</span>
+       <img class="shop-item-image" src="Images/sea1.jpg" width="300px" height="600px">
+       <div class="shop-item-details">
+         <span class="shop-item-price">$12.99</span>
+         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+       </div>
+     </div>
+     <div class="shop-item">
+       <span class="shop-item-title">Sea food No. 2</span>
+       <img class="shop-item-image" src="Images/sea2.jpg" width="300px" height="600px">
+       <div class="shop-item-details">
+         <span class="shop-item-price">$14.99</span>
+         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+       </div>
+     </div>
+     <div class="shop-item">
+       <span class="shop-item-title">Sea food No. 3</span>
+       <img class="shop-item-image" src="Images/sea3.jpg" width="300px" height="600px">
+       <div class="shop-item-details">
+         <span class="shop-item-price">$9.99</span>
+         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+       </div>
+     </div>
+     <div class="shop-item">
+       <span class="shop-item-title">Sea food No. 4</span>
+       <img class="shop-item-image" src="Images/sea4.jpg" width="300px" height="600px">
+       <div class="shop-item-details">
+         <span class="shop-item-price">$12.99</span>
+         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+       </div>
+     </div>
+
+<!---Sandwish  Menu-->
+<h2 class="section-header" id="Sandwich">Sandwich Menu</h2>
+<div class="shop-items">
+  <div class="shop-item">
+    <span class="shop-item-title">Sandwich No. 1</span>
+    <img class="shop-item-image" src="Images/s1.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$12.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Sandwich No. 2</span>
+    <img class="shop-item-image" src="Images/s2.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$14.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Sandwich No. 3</span>
+    <img class="shop-item-image" src="Images/s3.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$9.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Sandwich No. 4</span>
+    <img class="shop-item-image" src="Images/s4.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$12.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+
+  <!---Meat  Menu-->
+<h2 class="section-header" id="Meat">Meat Menu</h2>
+<div class="shop-items">
+  <div class="shop-item">
+    <span class="shop-item-title">Meat No. 1</span>
+    <img class="shop-item-image" src="Images/a1.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$12.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Meat No. 2</span>
+    <img class="shop-item-image" src="Images/a2.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$14.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Meat No. 3</span>
+    <img class="shop-item-image" src="Images/a3.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$9.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Meat No. 4</span>
+    <img class="shop-item-image" src="Images/a4.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$12.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+
+  <!---Dishes  Menu-->
+<h2 class="section-header" id="Dishes">Dishes Menu</h2>
+<div class="shop-items">
+  <div class="shop-item">
+    <span class="shop-item-title">Dishes No. 1</span>
+    <img class="shop-item-image" src="Images/d1.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$12.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Dishes No. 2</span>
+    <img class="shop-item-image" src="Images/d2.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$14.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Dishes No. 3</span>
+    <img class="shop-item-image" src="Images/d3.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$9.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Dishes No. 4</span>
+    <img class="shop-item-image" src="Images/d4.jpg" width="300px" height="600px">
+    <div class="shop-item-details">
+      <span class="shop-item-price">$12.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+  </div>
+
+
+  
 
 
 
+<!--- total prize -->
+<section class="container content-section" id="payment" style="background: rgba(138, 138, 138, 0.753);">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITEM</span>
+      <span class="cart-price cart-header cart-column">PRICE</span>
+      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+  </section>
 
 
+  <!--- footer -->
+  <footer class="main-footer" id="contact">
+    <div class="container main-footer-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 three_clo">
+                <h4>MRB Newsletter</h4>
+                <p style="color:rgb(255, 255, 255)">With so many amazing options, choosing the best restaurants in Granada can be a headache! This guide will help you make the tough decision.</p>
+                <form>
+                    <input type="email" placeholder="">
+                    <button class="btn1">
+                        <i class="fa fa-envelope-open"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-4 mid-row">
+                <h4 style="color:#000">Follow Us</h4>
+                <p style="color:#000">With so many amazing options, choosing the best restaurants in Granada can be a headache! This guide will help you make the tough decision.</p>
+                <div class="social-icon">
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa fa-globe"></i>Cool University <span class="number">80848</span></p>
+                <p><i class="fa fa-phone"></i>Call Us:<span class="nmber">(0046)1234 567</span></p>
+                <p><i class="fa fa-envelope-open"></i>Email us:<span class="number"><a href="mailto:@example.com"
+                            class="info">info@example.com</a></span></p>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+<section><p class="cpryt">© Copyright2019 <a href="https://helsingborg.se"> | Mido Restaurant Helsingborg</a></p></section>
 
-
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
